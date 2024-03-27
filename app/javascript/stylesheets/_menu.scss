@@ -1,5 +1,45 @@
+@use "variables" as *;
 .menu{
   background-color: red;
-  width: 264px;
-  height: 1024px;
+  width: 280px;
+  // height: 1024px;
+}
+
+.head{
+  width: 200px;
+  height: 32px;
+  margin-bottom: 20px;
+  display: flex;
+  font-weight: bold;
+}
+
+.col{
+  width: 240px;
+  height: 882px;
+  padding: 10px;
+}
+
+.cards{
+  display: block;
+  height: 44px;
+}
+
+.foot{
+  background-color: $bg-light;
+  width: 280px;
+  height: 60px;
+  padding: 10px 10px 10px 180px;
+}
+
+.main-edit-btn{
+  width: 90px;
+  height: 40px;
+  padding-left: 33px;
+  border-radius: 5px;
+  background-color: $brand-color;
+}
+
+.main-edit-text{
+  font-size: $font-minimum;
+  color: white;
 }

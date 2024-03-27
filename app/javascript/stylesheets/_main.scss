@@ -1,5 +1,17 @@
+@use "variables" as *;
 .main{
   background-color: blue;
   width: 1080px;
-  height: 1024px;
+  height: 935px;
+  margin: 0 40px 60px 40px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.main-bg-light{
+  background-color: $bg-light;
+}
+
+.main-bg-dark{
+  background-color: $bg-dark;
 }

@@ -1,0 +1,26 @@
+<div class="head d-flex">
+  <%= image_tag "icon/logo.svg" %>
+  <p>ServecName</p>
+</div>
+
+<div class="col">
+  <table>
+    <tbody>
+      <tr>
+        <% @books.each do |book| %>
+          <td class="cards">
+            <%= book.title %>
+          </td>
+        <% end %>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
+
+<div class="foot">
+  <div class="main-edit-btn">
+    <%= image_tag "icon/edit.svg", size:"18x18" %>
+    <p class="main-edit-text">Edit</p>
+  </div>
+</div>

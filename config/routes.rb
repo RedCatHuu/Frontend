@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'books#index'
+  root to: 'books#show'
   get 'books/create'
   get 'books/update'
   get 'books/destroy'
