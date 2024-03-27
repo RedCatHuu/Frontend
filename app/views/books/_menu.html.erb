@@ -4,17 +4,17 @@
 </div>
 
 <div class="col">
-  <table>
-    <tbody>
-      <tr>
-        <% @books.each do |book| %>
-          <td class="cards">
-            <%= book.title %>
-          </td>
+  <ul>
+    <% books.each do |book| %>
+      <li class="cards">
+        <%= link_to book_path(book) do %>
+          <%= book.title %>
         <% end %>
-      </tr>
-    </tbody>
-  </table>
+      </li>
+    <% end %>
+    
+  </ul>
+      
   
 </div>
 

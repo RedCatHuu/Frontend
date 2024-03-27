@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'books#show'
-  get 'books/create'
-  get 'books/update'
-  get 'books/destroy'
+  root to: 'books#index'
+  resources :books, only: [:show, :create, :edit, :update, :destroy]
+  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
