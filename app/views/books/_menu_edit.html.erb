@@ -1,0 +1,26 @@
+<div class="head d-flex">
+  <%= image_tag "icon/logo.svg" %>
+  <p>ServecName</p>
+</div>
+
+<div class="col">
+  <table>
+    <% books.each do |book| %>
+      <tr class="cards">
+        <td class="menu-title">
+          <%= link_to book_path(book) do %>
+            <%= book.title %>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to book_path(book), method: :delete do %>
+            <%= image_tag "icon/delete.svg", size:"18x18" %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+<div class="foot">
+</div>
