@@ -24,7 +24,7 @@
   div {
     display: flex;
   }
-  input {
+  input:first-child {
     border: 1px solid $brand-color;
     border-radius: 8px;
     padding: 0 30px;

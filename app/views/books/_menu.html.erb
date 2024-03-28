@@ -4,15 +4,17 @@
 </div>
 
 <div class="col">
-  <ul>
+  <table>
     <% books.each do |book| %>
-      <li class="cards">
-        <%= link_to main_path(:book_id => book.id), remote: true do %>
-          <%= book.title %>
-        <% end %>
-      </li>
+      <tr class="cards">
+        <td class="menu-title">
+          <%= link_to main_path(:book_id => book.id), remote: true do %>
+            <%= book.title %>
+          <% end %>
+        </td>
+      </tr>
     <% end %>
-  </ul>
+  </table>
 </div>
 
 <div class="foot">

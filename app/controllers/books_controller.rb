@@ -23,7 +23,14 @@ class BooksController < ApplicationController
   end
 
   def update
-
+    which = params[:book].delete(:which)
+    @book = Book.find(params[:id])
+    @book.update(book_params)
+    if which == "title"
+      render :'books/main_title'
+    else
+      render :'books/main_content'
+    end
   end
 
   def destroy
@@ -60,5 +67,5 @@ end
 private
 
 def book_params
-    params.require(:book).permit(:title, :content)
+    params.require(:book).permit(:title, :content, :which)
 end
