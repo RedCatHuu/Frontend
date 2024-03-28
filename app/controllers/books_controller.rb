@@ -14,9 +14,9 @@ class BooksController < ApplicationController
     render :'books/menu_edit'
   end
   
-  def edit
+  def menu
     @books = Book.all
-    @book = Book.find(params[:id])
+    render :'books/menu'
   end
   
   def menu_edit
@@ -37,6 +37,13 @@ class BooksController < ApplicationController
     # redirect_to book_path(book)
     render :'books/menu_edit'
   end
+  
+  def main
+    @book = Book.find(params[:book_id])
+    render :'books/main'
+  end 
+  
+  
 end
 
 private

@@ -7,17 +7,14 @@
   <ul>
     <% books.each do |book| %>
       <li class="cards">
-        <%= link_to book_path(book) do %>
+        <%= link_to main_path(:book_id => book.id), remote: true do %>
           <%= book.title %>
         <% end %>
       </li>
     <% end %>
-    
   </ul>
-      
-  
 </div>
 
 <div class="foot">
-  <%= render 'shared/edit_button', target_path: menu_edit_path(:book_id => book.id) %>
+  <%= render 'shared/edit_button', target_path: menu_edit_path %>
 </div>

@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root to: 'books#show', id: 1
   resources :books, only: [:show, :create, :edit, :update, :destroy]
+  get 'menu' => 'books#menu'
   get 'menu_edit' => 'books#menu_edit'
+  get 'main' => 'books#main'
   get 'title_edit' => 'books#title_edit'
   get 'content_edit' => 'books#content_edit'
   

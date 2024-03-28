@@ -1,6 +1,5 @@
 @use "variables" as *;
 .menu{
-  background-color: red;
   width: 280px;
   // height: 1024px;
 }
@@ -33,6 +32,15 @@
   width: 280px;
   height: 60px;
   padding: 10px 10px 10px 180px;
+}
+
+.foot-edit{
+  display: flex;
+  justify-content: space-between;
+  background-color: $bg-light;
+  width: 280px;
+  height: 60px;
+  padding: 10px 10px 10px 10px;
 }
 
 .btn-normal{
