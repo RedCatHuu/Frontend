@@ -19,11 +19,5 @@
 </div>
 
 <div class="foot">
-  <%= link_to menu_edit_path(:book_id => book.id), remote: true do %>
-    <div class="main-edit-btn">
-      <%= image_tag "icon/edit.svg", size:"18x18" %>
-      <p class="main-edit-text">Edit</p>
-    </div>
-  <% end %>
-  <!--%= render 'shared/edit_button', target_path: menu_edit_path %>-->
+  <%= render 'shared/edit_button', target_path: menu_edit_path(:book_id => book.id) %>
 </div>

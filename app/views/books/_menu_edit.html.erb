@@ -23,4 +23,6 @@
 </div>
 
 <div class="foot">
+  <%= render 'shared/new_button', target_path: book_path(book) %>
+  <!--%= render 'shared/done_button', target_path: book_path(:book_id => book.id), method: :update %>-->
 </div>

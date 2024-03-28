@@ -1,7 +1,7 @@
-<%= link_to target_path do %>
-  <div class="main-edit-btn">
-    <%= image_tag "icon/edit.svg", size:"18x18" %>
-    <p class="main-edit-text">Edit</p>
+<%= link_to target_path, remote: true do %>
+  <div class="btn-normal">
+    <%= image_tag "icon/edit.svg", size:"24x24" %>
+    <p class="btn-text">Edit</p>
   </div>
 <% end %>
 <!--titleのedit、contentのeditでわけないといけない-->
