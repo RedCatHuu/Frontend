@@ -1,17 +1,32 @@
 <div class="container">
   
-  <div id="menu" class="menu">
-    <%= render 'menu', books: @books, book: @book %>
-  </div>
-  
-  <div class="main main-bg-light">
-    <div id="main-title">
-      <%= render 'main_title', book: @book %>
+  <div class="menu">
+    
+    <div class="head d-flex">
+      <%= image_tag "icon/logo.svg" %>
+      <p>ServiceName</p>
     </div>
-    <div id="main-content">
-      <%= render 'main_content', book: @book %>
+      
+    <div id="menu" class="menu">
+      <%= render 'menu', books: @books, book: @book %>
     </div>
     
+  </div>
+  
+  <div>
+    <div class="main main-bg-light">
+      <div id="main-title">
+        <%= render 'main_title', book: @book %>
+      </div>
+      <div id="main-content">
+        <%= render 'main_content', book: @book %>
+      </div>
+    </div>
+    
+    <div class="main-footer d-flex">
+      <p>Copyright © 2021 Sample</p>
+      <p>運営会社</p>
+    </div>
   </div>
   
 </div>

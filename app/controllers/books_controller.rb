@@ -24,6 +24,7 @@ class BooksController < ApplicationController
 
   def update
     which = params[:book].delete(:which)
+    @books = Book.all
     @book = Book.find(params[:id])
     @book.update(book_params)
     if which == "title"
@@ -43,6 +44,7 @@ class BooksController < ApplicationController
   def main
     which = params[:which]
     @book = Book.find(params[:book_id])
+    @books = Book.all
     if which == "title"
       render :'books/main_title'
     elsif which == "content"
@@ -67,5 +69,5 @@ end
 private
 
 def book_params
-    params.require(:book).permit(:title, :content, :which)
+    params.require(:book).permit(:title, :content)
 end

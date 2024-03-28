@@ -10,6 +10,10 @@
   margin-bottom: 20px;
   display: flex;
   font-weight: bold;
+  font-size: $font-title;
+  p{
+    margin-left: 4px;
+  }
 }
 
 .col{
@@ -21,6 +25,9 @@
 .cards{
   width: 240px;
   height: 44px;
+  a{
+    color: $text-regular-color;
+  }
 }
 
 a:link{
@@ -45,4 +52,8 @@ a:link{
   width: 280px;
   height: 60px;
   padding: 10px 10px 10px 10px;
+}
+
+.clicked{
+  background-color: $brand-color;
 }

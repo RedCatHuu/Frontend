@@ -3,7 +3,7 @@
   background-color: blue;
   width: 1080px;
   height: 935px;
-  margin: 0 40px 60px 40px;
+  margin: 0 40px 0 40px;
   padding: 30px;
   border-radius: 20px;
 }
@@ -74,3 +74,12 @@
   border-radius: 8px;
 }
 
+.main-footer{
+  width: 1040px;
+  padding-top: 22px;
+  margin-left: 70px;
+  font-size: $font-caption;
+  display: flex;
+  justify-content: space-between;
+  
+}
