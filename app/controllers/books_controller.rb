@@ -7,10 +7,8 @@ class BooksController < ApplicationController
 
   def create
     @books = Book.all
-    # book = Book.find(params[:book_id])
     newBook = Book.new(title: "タイトル", content: "コンテンツ")
     newBook.save
-    # redirect_to book_path(book)
     render :'books/menu_edit'
   end
   
@@ -21,8 +19,6 @@ class BooksController < ApplicationController
   
   def menu_edit
     @books = Book.all
-    # @book = Book.find(params[:book_id])
-    # redirect_to book_path(@book)
     render :'books/menu_edit'
   end
 
@@ -34,25 +30,30 @@ class BooksController < ApplicationController
     @books = Book.all
     book = Book.find(params[:id])
     book.destroy
-    # redirect_to book_path(book)
     render :'books/menu_edit'
   end
   
   def main
+    which = params[:which]
     @book = Book.find(params[:book_id])
-    render :'books/main'
+    if which == "title"
+      render :'books/main_title'
+    elsif which == "content"
+      render :'books/main_content'
+    else
+      render :'books/main'
+    end
   end 
   
-  def main_title_edit
+  def main_edit
     @book = Book.find(params[:book_id])
-    render :'books/main_title_edit'
+    which = params[:which]
+    if which == "title"
+      render :'books/main_title_edit'
+    else
+      render :'books/main_content_edit'
+    end 
   end
-  
-  def main_content_edit
-    @book = Book.find(params[:book_id])
-    render :'books/main_content_edit'
-  end
-  
   
 end
 

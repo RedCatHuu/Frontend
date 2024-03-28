@@ -21,6 +21,9 @@
   width: 1050px;
   height: 40px;
   margin-bottom: 20px;
+  div {
+    display: flex;
+  }
   input {
     border: 1px solid $brand-color;
     border-radius: 8px;
@@ -30,6 +33,12 @@
     font-size: $font-title;
   }
 
+}
+
+.main-two-btn{
+  margin-left: 20px;
+  justify-content: space-between;
+  width: 90px;
 }
 
 .title-text{
@@ -42,6 +51,9 @@
 
 .main-content{
   display: flex;
+  div {
+    display: flex;
+  }
   textarea {
     border: 1px solid $brand-color;
     border-radius: 8px;

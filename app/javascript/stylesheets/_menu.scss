@@ -50,38 +50,3 @@ li{
   height: 60px;
   padding: 10px 10px 10px 10px;
 }
-
-.btn-normal{
-  width: 90px;
-  height: 40px;
-  padding-left: 33px;
-  border-radius: 5px;
-  background-color: $brand-color;
-  position: relative;
-}
-
-.btn-text{
-  font-size: $font-minimum;
-  color: white;
-  position: absolute;
-  bottom: 3px;
-  left: 33px;
-}
-
-.btn-outline{
-  width: 90px;
-  height: 40px;
-  padding-left: 33px;
-  border: solid 1px $brand-color;
-  border-radius: 5px;
-  background-color: white;
-  position: relative;
-}
-
-.btn-outline-text{
-  font-size: $font-minimum;
-  color: $brand-color;
-  position: absolute;
-  bottom: 3px;
-  left: 20.5px;
-}

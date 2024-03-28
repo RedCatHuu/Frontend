@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'menu' => 'books#menu'
   get 'menu_edit' => 'books#menu_edit'
   get 'main' => 'books#main'
+  get 'main_edit' => 'books#main_edit'
   get 'main_title_edit' => 'books#main_title_edit'
   get 'main_content_edit' => 'books#main_content_edit'
   

@@ -9,3 +9,69 @@ body{
   display: flex;
   padding: 30px 40px 0 40px;
 }
+
+.btn-normal{
+  width: 90px;
+  height: 40px;
+  padding-left: 33px;
+  border-radius: 5px;
+  background-color: $brand-color;
+  position: relative;
+}
+
+.btn-text{
+  font-size: $font-minimum;
+  color: white;
+  position: absolute;
+  bottom: 3px;
+  left: 33px;
+}
+
+.btn-outline{
+  width: 90px;
+  height: 40px;
+  padding-left: 33px;
+  border: solid 1px $brand-color;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+}
+
+.btn-outline-text{
+  font-size: $font-minimum;
+  color: $brand-color;
+  position: absolute;
+  bottom: 3px;
+  left: 20.5px;
+}
+
+.btn-small{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-small-icon{
+  position: absolute;
+  top: 2px;
+  left: 8px;
+}
+
+.btn-small-text{
+  font-size: $font-minimum;
+  color: white;
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.bg-brand{
+  background-color: $brand-color;
+}
+
+.bg-normal{
+  background-color: $btn-normal;
+}

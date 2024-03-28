@@ -1,4 +1,4 @@
 <div class="main-title">
   <p class="title-text"><%= book.title %></p>
-  <%= render 'shared/edit_button', target_path: main_title_edit_path(:book_id => book.id) %>
+  <%= render 'shared/edit_button', target_path: main_edit_path(:book_id => book.id, :which => "title") %>
 </div>
