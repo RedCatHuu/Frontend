@@ -13,7 +13,7 @@
           <% end %>
         </td>
         <td>
-          <%= link_to book_path(book), method: :delete do %>
+          <%= link_to book_path(book), method: :delete, remote: true do %>
             <%= image_tag "icon/delete.svg", size:"18x18" %>
           <% end %>
         </td>
@@ -23,6 +23,6 @@
 </div>
 
 <div class="foot">
-  <%= render 'shared/new_button', target_path: book_path(book) %>
-  <!--%= render 'shared/done_button', target_path: book_path(:book_id => book.id), method: :update %>-->
+  <%= render 'shared/new_button', target_path: books_path %>
+  <%= render 'shared/done_button', target_path: book_path(book) %>
 </div>

@@ -6,6 +6,12 @@ class BooksController < ApplicationController
   end
 
   def create
+    @books = Book.all
+    # book = Book.find(params[:book_id])
+    newBook = Book.new(title: "タイトル", content: "コンテンツ")
+    newBook.save
+    # redirect_to book_path(book)
+    render :'books/menu_edit'
   end
   
   def edit
@@ -15,9 +21,9 @@ class BooksController < ApplicationController
   
   def menu_edit
     @books = Book.all
-    @book = Book.find(params[:book_id])
+    # @book = Book.find(params[:book_id])
     # redirect_to book_path(@book)
-    render :menu_edit
+    render :'books/menu_edit'
   end
 
   def update
@@ -25,9 +31,11 @@ class BooksController < ApplicationController
   end
 
   def destroy
+    @books = Book.all
     book = Book.find(params[:id])
     book.destroy
-    redirect_to book_path(book)
+    # redirect_to book_path(book)
+    render :'books/menu_edit'
   end
 end
 
