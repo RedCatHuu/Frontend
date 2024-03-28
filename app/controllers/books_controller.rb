@@ -43,6 +43,16 @@ class BooksController < ApplicationController
     render :'books/main'
   end 
   
+  def main_title_edit
+    @book = Book.find(params[:book_id])
+    render :'books/main_title_edit'
+  end
+  
+  def main_content_edit
+    @book = Book.find(params[:book_id])
+    render :'books/main_content_edit'
+  end
+  
   
 end
 

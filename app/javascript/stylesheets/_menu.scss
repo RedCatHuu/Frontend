@@ -23,8 +23,16 @@
   height: 44px;
 }
 
+a:link{
+  text-decoration: none;
+}
+
 .menu-title{
   width: 186px;
+}
+
+li{
+  list-style: none;
 }
 
 .foot{

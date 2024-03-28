@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+body{
+  font-family: $font;
+  color: $text-regular-color;
+}
+
+.container{
+  display: flex;
+  padding: 30px 40px 0 40px;
+}

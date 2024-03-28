@@ -4,8 +4,14 @@
     <%= render 'menu', books: @books, book: @book %>
   </div>
   
-  <div id="main" class="main main-bg-light">
-    <%= render 'main', book: @book %>
+  <div class="main main-bg-light">
+    <div id="main-title">
+      <%= render 'main_title', book: @book %>
+    </div>
+    <div id="main-content">
+      <%= render 'main_content', book: @book %>
+    </div>
+    
   </div>
   
 </div>

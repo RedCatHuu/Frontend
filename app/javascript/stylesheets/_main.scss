@@ -15,3 +15,50 @@
 .main-bg-dark{
   background-color: $bg-dark;
 }
+
+.main-title{
+  display: flex;
+  width: 1050px;
+  height: 40px;
+  margin-bottom: 20px;
+  input {
+    border: 1px solid $brand-color;
+    border-radius: 8px;
+    padding: 0 30px;
+    width: 910px;
+    height: 40px;
+    font-size: $font-title;
+  }
+
+}
+
+.title-text{
+  width: 910px;
+  font-size: $font-title;
+  padding: 0 30px;
+  margin-left: 20px;
+  
+}
+
+.main-content{
+  display: flex;
+  textarea {
+    border: 1px solid $brand-color;
+    border-radius: 8px;
+    padding: 30px;
+    width: 910px;
+    height: 904px;
+    font-size: $font-body;
+    font-family: $font;
+  }
+}
+
+.content-text{
+  width: 910px;
+  height: 815px;
+  padding: 30px;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
