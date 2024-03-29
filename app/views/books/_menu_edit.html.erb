@@ -1,3 +1,4 @@
+<!--menu 非編集時-->
 <div class="col">
   <table>
     <% books.each do |book| %>
@@ -17,11 +18,13 @@
   </table>
 </div>
 
+<!--ボタン-->
 <div class="foot-edit">
   <%= render 'shared/new_button', target_path: books_path %>
   <%= render 'shared/done_button', target_path: menu_path %>
 </div>
 
+<!--menu選択個所の装飾-->
 <script>
   $(".cards a").click(function(){
     let links = document.querySelectorAll(".cards a");
