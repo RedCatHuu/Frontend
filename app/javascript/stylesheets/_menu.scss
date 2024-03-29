@@ -1,0 +1,66 @@
+@use "variables" as *;
+.menu{
+  width: 280px;
+  // height: 1024px;
+}
+
+.head{
+  width: 200px;
+  height: 32px;
+  margin-bottom: 20px;
+  display: flex;
+  font-weight: bold;
+  font-size: $font-title;
+  p{
+    margin-left: 4px;
+  }
+}
+
+.col{
+  width: 240px;
+  height: 882px;
+  padding: 10px;
+}
+
+.cards{
+  width: 240px;
+  height: 44px;
+  a{
+    color: $text-regular-color;
+  }
+}
+
+a:link{
+  text-decoration: none;
+}
+
+.menu-title{
+  width: 186px;
+  padding-left: 10px;
+}
+
+.foot{
+  background-color: $bg-light;
+  width: 280px;
+  height: 60px;
+  padding: 10px 10px 10px 180px;
+}
+
+.foot-edit{
+  display: flex;
+  justify-content: space-between;
+  background-color: $bg-light;
+  width: 280px;
+  height: 60px;
+  padding: 10px 10px 10px 10px;
+}
+
+.clicked{
+  background-color: $bg-light;
+  color: $brand-color;
+  font-weight: bold;
+  border-radius: 4px;
+  a{
+    color: $brand-color;
+  }
+}

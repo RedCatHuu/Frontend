@@ -1,0 +1,85 @@
+@use "variables" as *;
+.main{
+  background-color: blue;
+  width: 1080px;
+  height: 935px;
+  margin: 0 40px 0 40px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.main-bg-light{
+  background-color: $bg-light;
+}
+
+.main-bg-dark{
+  background-color: $bg-dark;
+}
+
+.main-title{
+  display: flex;
+  width: 1050px;
+  height: 40px;
+  margin-bottom: 20px;
+  div {
+    display: flex;
+  }
+  input:first-child {
+    border: 1px solid $brand-color;
+    border-radius: 8px;
+    padding: 0 30px;
+    width: 910px;
+    height: 40px;
+    font-size: $font-title;
+  }
+
+}
+
+.main-two-btn{
+  margin-left: 20px;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.title-text{
+  width: 910px;
+  font-size: $font-title;
+  padding: 0 30px;
+  margin-left: 20px;
+  
+}
+
+.main-content{
+  display: flex;
+  div {
+    display: flex;
+  }
+  textarea {
+    border: 1px solid $brand-color;
+    border-radius: 8px;
+    padding: 30px;
+    width: 910px;
+    height: 904px;
+    font-size: $font-body;
+    font-family: $font;
+  }
+}
+
+.content-text{
+  width: 910px;
+  height: 815px;
+  padding: 30px;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.main-footer{
+  width: 1040px;
+  padding-top: 22px;
+  margin-left: 70px;
+  font-size: $font-caption;
+  display: flex;
+  justify-content: space-between;
+  
+}

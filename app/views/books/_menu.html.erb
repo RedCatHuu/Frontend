@@ -1,0 +1,29 @@
+<div class="col">
+  <table>
+    <% books.each do |book| %>
+      <tr class="cards">
+        <td class="menu-title">
+          <%= link_to main_path(:book_id => book.id), remote: true do %>
+            <%= book.title %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+<div class="foot">
+  <%= render 'shared/edit_button', target_path: menu_edit_path %>
+</div>
+
+
+<script>
+  $(".cards a").click(function(){
+    let links = document.querySelectorAll(".cards a");
+    // 全てのclickedクラスを消す
+    links.forEach(item => {
+      item.closest("tr").classList.remove("clicked");
+    });
+    this.closest("tr").classList.add("clicked");
+  })
+</script>

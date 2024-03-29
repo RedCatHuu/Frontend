@@ -1,0 +1,11 @@
+<div class="main-content">
+  <%= form_with model: @book, local: false do |f| %>
+    <div>
+      <%= f.text_area :content %>
+      <div class="main-two-btn">
+        <%= render 'shared/cancel_button', target_path: main_path(:book_id => book.id, :which => "content"), book: @book %>
+        <%= render 'shared/save_button', f: f %>
+      </div>
+    </div>
+  <% end %>
+</div>
