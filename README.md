@@ -20,5 +20,6 @@ $ yarn install
 $ yarn migration:run
 $ yarn build
 $ yarn start
-```
+
 以上を実行し、http://localhost:3000/apiにアクセスしましたがページが開けず、解決もできませんでした。
+```
