@@ -1,3 +1,4 @@
+<!--title 編集時-->
 <div class="main-title">
   <%= form_with model: @book, local: false do |f| %>
     <%= f.hidden_field :which, :value => "title" %>
@@ -5,7 +6,6 @@
       <%= f.text_field :title %>
       <div class="main-two-btn">
         <%= render 'shared/cancel_button', target_path: main_path(:book_id => book.id, :which => "title"), book: @book %>
-        
         <%= render 'shared/save_button', f: f %>
       </div>
     </div>
