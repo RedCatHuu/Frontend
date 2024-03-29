@@ -1,24 +1,20 @@
-# README
+## 環境
+* ruby 3.1.2
+* rails 6.1.7
+* jQuery 1.12.4
+* IED cloud9
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 導入方法
+$ git clone git@github.com:RedCatHuu/Frontend.git
+$ rails db:migrate
+$ rails db:seed
+$ yarn install
+$ bundle install
+$ rails s
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## APIは取得できませんでした。
+$ yarn install
+$ yarn migration:run
+$ yarn build
+$ yarn start
+以上を実行し、http://localhost:3000/apiにアクセスしましたがページが開けず、解決もできませんでした。
