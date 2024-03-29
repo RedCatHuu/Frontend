@@ -15,3 +15,15 @@
 <div class="foot">
   <%= render 'shared/edit_button', target_path: menu_edit_path %>
 </div>
+
+
+<script>
+  $(".cards a").click(function(){
+    let links = document.querySelectorAll(".cards a");
+    // 全てのclickedクラスを消す
+    links.forEach(item => {
+      item.closest("tr").classList.remove("clicked");
+    });
+    this.closest("tr").classList.add("clicked");
+  })
+</script>

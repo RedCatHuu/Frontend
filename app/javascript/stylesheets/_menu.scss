@@ -36,6 +36,7 @@ a:link{
 
 .menu-title{
   width: 186px;
+  padding-left: 10px;
 }
 
 .foot{
@@ -55,5 +56,11 @@ a:link{
 }
 
 .clicked{
-  background-color: $brand-color;
+  background-color: $bg-light;
+  color: $brand-color;
+  font-weight: bold;
+  border-radius: 4px;
+  a{
+    color: $brand-color;
+  }
 }

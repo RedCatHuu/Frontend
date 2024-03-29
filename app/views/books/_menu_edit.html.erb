@@ -21,3 +21,14 @@
   <%= render 'shared/new_button', target_path: books_path %>
   <%= render 'shared/done_button', target_path: menu_path %>
 </div>
+
+<script>
+  $(".cards a").click(function(){
+    let links = document.querySelectorAll(".cards a");
+    // 全てのclickedクラスを消す
+    links.forEach(item => {
+      item.closest("tr").classList.remove("clicked");
+    });
+    this.closest("tr").classList.add("clicked");
+  })
+</script>
